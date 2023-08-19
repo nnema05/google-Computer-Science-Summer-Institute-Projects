@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+</head>
+
+<!--hero with welcome to colorado! -->
+
+<body>
+
+  <section class="hero is-large is-fullheight">
+    <div class="hero-image">
+      <figure class="image">
+        <img
+          src="https://media.istockphoto.com/photos/colorado-welcome-road-sign-picture-id695140262?k=20&m=695140262&s=612x612&w=0&h=3CNlhrRpTtOccECDmHTZXY17KF9RZ52wHbD0WhqAqrU=" />
+      </figure>
+    </div>
+  </section>
+
+  <section id="welcomeSection">
+    <h1 class="title has-text-centered has-text-link-dark"> Welcome to Colorado! Click the button below to
+      explore your the travel
+      possibilities here.</h1>
+    <!-- Colorado state image plus button on top  -->
+    <section id="coloradoState">
+      <div class="card-image has-text-centered">
+        <figure class="image is-64x32">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flag_of_Colorado.svg/255px-Flag_of_Colorado.svg.png" />
+          <button id="clickMeButton" class="button is-large">Click Me!</button>
+        </figure>
+      </div>
+    </section>
+  </section>
+
+
+
+
+  <!-- Create travel sections that are hidden right now -->
+  <section class="categories is-hidden">
+    <!-- additional welcome text -->
+    <h2 class="title has-text-centered has-text-danger-dark">We are glad you have chosen Colorado as your travel
+      destination.</h2>
+    <h2 class="subtitle has-text-centered">Click the buttons below to explore the best places to shop, eat, and best
+      activties</h2>
+    <!-- Shopping section -->
+    <section class="shopping">
+      <!--  all shopping locations in a box with a title, subtitle, image -->
+      <div class="box">
+        <h1 class="title">Shopping</h1>
+        <h1 class="subtitle">Want to bring something home from your trip? Colorado has incredible shopping locations
+          across the state!</h1>
+        <!--Shopping location 1 -->
+        <div id="shoppingLocation1" class=is-hidden>
+          <h1 class="title">Pearl Street</h1>
+          <h1 class="subtitle">A street lined with restaurants, shops and people watching, Pearl Street is the heart
+            and soul of Boulder</h1>
+          <img
+            src="https://www.uncovercolorado.com/wp-content/uploads/2020/06/Pearl-Street-Mall-Boulder-CO-1600x800-1.jpg" />
+        </div>
+        <!--Shopping location 2 -->
+        <div id="shoppingLocation2" class=is-hidden>
+          <h1 class="title">16th Street Mall</h1>
+          <h1 class="subtitle">Just over a full mile of pedestrian shopping and dining has made the 16th Street Mall a
+            downtown Denver favorite of locals and tourists for more than 30 years. Over 250 shops and restaurants,
+            plus year-round special events, make this area an exciting Denver destination since the early eighties
+          </h1>
+          <img src="https://www.uncovercolorado.com/wp-content/uploads/2020/05/16th-Street-Mall-CO-1600x800-1.jpg" />
+
+        </div>
+        <!--Shopping location 3 -->
+        <div id="shoppingLocation3" class=is-hidden>
+          <h1 class="title">Cherry Creek Mall</h1>
+          <h1 class="subtitle">Cherry Creek Mall and surrounding stores provide a revered shopping mecca for fans of
+            luxury designer brands. This is a well-known, must-shop destination for locals and worldwide travelers
+            alike.
+          </h1>
+          <img src="https://www.uncovercolorado.com/wp-content/uploads/2020/04/Cherry-Creek-Mall-CO-1600x800-1.jpg" />
+
+        </div>
+        <!--  include button that displays a shopping location -->
+        <button id="shoppingButton" class="button is-large">Show Shopping Locations</button>
+      </div>
+    </section>
+
+    <!-- Dining section -->
+    <section class="dining">
+      <!--  all dining locations in a box with a title, subtitle, image -->
+      <div class="box">
+        <h1 class="title">Dining</h1>
+        <h1 class="subtitle">Try the amazing restaurants across Colorado</h1>
+        <!--Dining location 1 -->
+        <div id="diningLocation1" class=is-hidden>
+          <h1 class="title">Aspen Public House </h1>
+          <h1 class="subtitle">On the ground floor of Aspen’s historic Wheeler Opera House, the Public House dishes up
+            Colorado-inspired comfort food. Large windows open to allow the summer breeze in but can shut out the winter
+            chill without blocking the snow and mountain views. Menu standouts include the charred Caesar salad, the
+            rosemary and parmesan fries, and you can always take a risk on whatever taco is featured on the list of
+            daily specials.</h1>
+          <img
+            src="https://afar-production.imgix.net/uploads/images/post_images/images/W68W5o7m45/original_8e8b0eb49a41df6a28c627f900d535bb.jpg?1555517902?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954&dpr=2" />
+        </div>
+        <!--Dining location 2 -->
+        <div id="diningLocation2" class=is-hidden>
+          <h1 class="title">Cache Cache Restaurant</h1>
+          <h1 class="subtitle">Cache Cache serves a flavorful French and Provencal cuisine. Chris and Jodi, the
+            co-owners pride themselves on the complete experience from start to finish and I think that is why people
+            come back time after time with such loyalty. They create a culinary wonder.
+          </h1>
+          <img
+            src="https://afar-production.imgix.net/uploads/images/post_images/images/hTxLlD3Hbu/original_211842ae605cfe090f121612f9154efe.jpg?1483648256?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954&dpr=2" />
+        </div>
+        <!--Dining location 3 -->
+        <div id="diningLocation3" class=is-hidden>
+          <h1 class="title">Casa Tua</h1>
+          <h1 class="subtitle">When you eat at Casa Tua you are more than a guest at a restaurant. They make an effort
+            to make everyone feel like they are visiting the home of a friend.
+          </h1>
+          <img
+            src="https://afar-production.imgix.net/uploads/images/post_images/images/2osw6gr68k/original_open-uri20131014-15000-9uxybc?1383830472?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954&dpr=2" />
+        </div>
+        <!--  include button that displays a dining location -->
+        <button id="diningButton" class="button is-large">Show Dining Locations</button>
+      </div>
+    </section>
+
+    <!-- Activties section -->
+    <section class="activities">
+      <!--  all activities in a box with a title, subtitle, image -->
+      <div class="box">
+        <h1 class="title">Activity</h1>
+        <h1 class="subtitle">There is so much to do in Colorado. Explore all the activities below!</h1>
+        <!--Activity 1 -->
+        <div id="activity1" class=is-hidden>
+          <h1 class="title">Indian Hot Springs </h1>
+          <h1 class="subtitle">Indian Hot Springs makes for a relaxing detour on your way back from the mountains. It’s
+            one of the closest hot springs to Denver, conveniently located off I-70 in Idaho Springs, CO. The resort
+            features a hot springs swimming pool, private baths, caves, lodging, a gift shop, and a lounge. There’s also
+            a full spa with a myriad of services.</h1>
+          <img
+            src="https://www.uncovercolorado.com/wp-content/uploads/2022/05/indian-hot-springs-idaho-springs-indoor-pool-colorado.jpeg" />
+        </div>
+        <!--Activity 2 -->
+        <div id="activity2" class=is-hidden>
+          <h1 class="title">Mount Evans Trail</h1>
+          <h1 class="subtitle">Bag the summit of Mount Evans, another one of the fifty-eight Fourteeners of Colorado,
+            through a short but rather beautiful hike along Mount Evans Trail. Mount Evans Trail was designated as a
+            National Recreation Trail in 1979.
+          </h1>
+          <img src="https://www.uncovercolorado.com/wp-content/uploads/2018/04/mount-evans-trail-hiking-1440x960.jpg" />
+        </div>
+        <!--Activity 3 -->
+        <div id="activity3" class=is-hidden>
+          <h1 class="title">Rocky Mountain Balloon Adventures – Pagosa Springs</h1>
+          <h1 class="subtitle">Balloon rides by the Rocky Mountain Balloon Adventures are considered one of the best
+            activities to do in Pagosa Springs. The company was founded in 1986 by Mike Marchand, a licensed pilot who
+            became widely known by the city dwellers and tourists due to his signature red, yellow, and blue balloon.
+          </h1>
+          <img src="https://www.uncovercolorado.com/wp-content/uploads/2021/07/colorfest-pagosa-springs-colorado.jpg" />
+        </div>
+        <!--  include button that displays a dining location -->
+        <button id="activityButton" class="button is-large">Show Activities</button>
+      </div>
+    </section>
+
+
+    <script src="script.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>
