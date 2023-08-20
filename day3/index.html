@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSSI's Top 10 Songs!</title> <!--name of our tab-->
+  <link rel="stylesheet" href="style.css" />
+  <!--grabbing a css file someone else has already written and adding it to our website-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> 
+</head>
+
+<body>
+  <!-- HERO banner-->
+  <!-- HERO banner is a bar at a top of a website and goes all the way across -->
+  <!--start it with hero class and make a type of green and will center some text-->
+  <section class="has-background-danger-dark has-text-centered">
+    <!--have child element with hero body with title and subtitle with text that is white and is certain sizes-->
+    <div class="hero-body">
+      <p class="title has-text-white is-1">CSSI Playlist</p>
+      <p class="subtitle has-text-white is-3">Our Top 10 Favorite Tunes</p>
+
+      <!--Drowdown menu in hero banner body, copied code from bulma-->
+  <div class="dropdown is-hoverable">
+  <div class="dropdown-trigger">
+    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>Song Dropdown</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item">
+        Favorite Song
+      </a>
+      <a class="dropdown-item">
+        First 3 favorite songs
+      </a>
+      <a href="#" class="dropdown-item is-active">
+        Second 3 favorite songs
+      </a>
+      <a href="#" class="dropdown-item">
+        Last favorite songs
+      </a>
+      <hr class="dropdown-divider">
+      <a href="#" class="dropdown-item">
+        With a divider
+      </a>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+  </section>
+  
+
+
+  <!-- ROW 1 -->
+  <!-- Top Song -->
+  <!--start with a parent columns and a child column-->
+  <div class="columns is-centered">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-third mt-4 has-background-success-dark">
+      <!-- CARD -->
+      <div class="card"> <!--card in bulma allows for grouping of things-->
+        <div class="card-image">
+          <figure class="image">
+            <!--make each image a clickable link-->
+            <a href="https://www.youtube.com/watch?v=oh64haEP9g8&ab_channel=SZAVEVO">
+              <img src="https://resources.tidal.com/images/e59f5bde/ab6c/433b/b864/bd4c9374371e/640x640.jpg"
+              alt="Placeholder image" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Good Days</p>
+            <p class="subtitle is-6">SZA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- First Row of Our Other Favorites -->
+  <!-- ROW 2 -->
+  <div class="columns is-centered is-variable is-5">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-quarter is-one-third mt-4 has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=VF-FGf_ZZiI&ab_channel=SteveLacy">
+              <img src="https://i.scdn.co/image/ab67616d0000b2739904ecb0b1148a128bdd5e36"
+              alt="Steve Lacy Bad Habit Album Cover" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Bad Habit</p>
+            <p class="subtitle is-6">Steve Lacy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="column is-one-quarter is-one-third mt-4 has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=F1B9Fk_SgI0&ab_channel=ChildishGambinoVEVO">
+              <img
+              src="https://www.rollingstone.com/wp-content/uploads/2018/09/Screen-Shot-2018-09-02-at-5.39.02-AM.png"
+              alt="Feels Like Summer Childish Gambino Album Cover" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Feels Like Summer</p>
+            <p class="subtitle is-6">Childish Gambino</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="column is-one-quarter is-one-third mt-4 has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=Y_8mUx4VOmo&ab_channel=michaeljacksonVEVO">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8i6IepGWle8euYYnhZc2mwdiU1kU2nX0UG_WD2GmBLrP47qpkplPBcB2sw6g6uR6893w&usqp=CAU" alt="Chicago Micheal Jackson album cover" />
+            </a>
+            
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Chicago</p>
+            <p class="subtitle is-6">Micheal Jackson</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 3 -->
+  <!-- Second Row of Our Other Favorites -->
+  <div class="columns is-centered is-variable is-5">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a>
+              
+            </a>
+            <a href="https://www.youtube.com/watch?v=izGwDsrQ1eQ&ab_channel=georgemichaelVEVO">
+              <img src="https://i.scdn.co/image/ab67616d0000b27364c19b24ce947ffa363f8f96"
+              alt="Careless Whisper George Micheal album cover" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Careless Whisper</p>
+            <p class="subtitle is-6">George Micheal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=3MtoSSfnhMc&ab_channel=BrentFaiyaz">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Brent_Faiyaz_and_DJ_Dahi_-_Gravity.png/220px-Brent_Faiyaz_and_DJ_Dahi_-_Gravity.png"
+              alt="Gravity Brent Faiyaz album cover"/>
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Gravity</p>
+            <p class="subtitle is-6">Brent Faiyaz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=fregObNcHC8&ab_channel=NirvanaVEVO">
+              <img src="https://i.ytimg.com/vi/pXBvuBSYaxc/maxresdefault.jpg" alt="The Man Who Sold the World Nirvana album cover" />
+            </a>
+            
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">The Man Who Sold the World</p>
+            <p class="subtitle is-6">Nirvana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!--ROW 4-->
+  <!--Third row of favorite songs-->
+  <div class="columns is-centered is-variable is-5">
+    <!-- COLUMN 1 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=TDVlDUAIz5k&ab_channel=michaeljacksonVEVO">
+              <img src="https://i1.sndcdn.com/artworks-lPJLjaX3MPYr-0-t500x500.jpg"
+              alt="Heavan Can Wait Micheal Jackson album cover" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Heavan Can Wait</p>
+            <p class="subtitle is-6">Micheal Jackson</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=O8CKxlmkZtw&ab_channel=BrentFaiyaz-Topic">
+              <img src="https://i.scdn.co/image/ab67616d0000b2731d3dc97de65dfe0ec96468c4"
+              alt="Poison Brent Faiyaz album covr" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Poison</p>
+            <p class="subtitle is-6">Brent Faiyaz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="column is-one-quarter has-background-danger-dark">
+      <!-- CARD -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+            <a href="https://www.youtube.com/watch?v=Cy3BF09-wls&ab_channel=Felly-Topic">
+              <img src="https://images.genius.com/4de8355803a5d715335f40609bbd99a1.500x500x1.jpg" alt="Fabrics Felly album cover" />
+            </a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Fabrics</p>
+            <p class="subtitle is-6">Felly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!--Embeddding a playlist in footer-->
+  <footer>
+    <h1>Check out Apple Music's Today's Hits playlist for new music</h1>
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb"></iframe>
+  </footer>
+  
+</body>
+
+</html>

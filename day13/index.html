@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Nandini's Burgers</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <div id="nav">
+    <div class="topping" data-ingredient="bun" data-price="0.00">Bun</div>
+    <div id="tomatoNav" class="topping" data-ingredient="tomato" data-price="0.30">
+      Tomato
+    </div>
+    <div class="topping" data-ingredient="lettuce" data-price="0.00">
+      Lettuce
+    </div>
+    <div class="topping" data-ingredient="cheese" data-price="0.75">
+      Cheese
+    </div>
+    <div class="topping" data-ingredient="patty" data-price="1.25">Patty</div>
+  </div>
+  <div id="wrapper">
+    <div id="orderId" class="order">
+      <div class="forButton">
+        <div id="bunOrder" class="topping bun" data-ingredient="bun" data-price="0.00">
+          Bun
+          <img class="toppingImage"
+            src="https://media.istockphoto.com/photos/sesame-seed-hamburger-bun-isolated-on-white-top-view-picture-id1178954509?k=20&m=1178954509&s=612x612&w=0&h=Ml1IszAKB26o17WNfLy94taZ07jU2RSBJQSB1NgAPDs=" />
+          <div class="subtitle"> $0.00 </div>
+
+        </div>
+        <button id="bunTopButton">Add to cart</button>
+      </div>
+      <div class="forButton">
+        <div class="topping bun bottom" data-ingredient="bun" data-price="0.00">
+          Bun
+          <img class="toppingImage"
+            src="https://atlas-content1-cdn.pixelsquid.com/assets_v2/255/2555901041975498600/jpeg-600/G03.jpg" />
+          <div class="subtitle"> $0.00
+          </div>
+        </div>
+        <button id="bunBottomButton">Add to cart</button>
+      </div>
+      <div class="forButton">
+        <div class="topping tomato" data-ingredient="tomato" data-price="0.30">
+          Tomato
+          <img class="toppingImage"
+            src="https://i5.walmartimages.com/asr/9f8b7456-81d0-4dc2-b422-97cf63077762.0ddba51bbf14a5029ce82f5fce878dee.jpeg" />
+          <div class="subtitle"> $0.30 </div>
+        </div>
+        <button id="tomatoButton">Add to cart</button>
+      </div>
+      <div class="forButton">
+        <div class="topping lettuce" data-ingredient="lettuce" data-price="0.00">
+          Lettuce
+          <img class="toppingImage" src="https://cdn.britannica.com/77/170677-050-F7333D51/lettuce.jpg" />
+
+          <div class="subtitle"> $0.00 </div>
+
+        </div>
+        <button id="lettuceButton">Add to cart</button>
+      </div>
+      <div class="forButton">
+
+        <div class="topping cheese" data-ingredient="cheese" data-price="0.75">
+          Cheese
+          <img class="toppingImage"
+            src="https://previews.123rf.com/images/eremin/eremin1801/eremin180100026/94388309-slices-of-processed-cheese-on-a-white-background-square-slices-of-cheese-for-a-burger-closeup-.jpg" />
+          <div class="subtitle"> $0.75 </div>
+
+        </div>
+        <button id="cheeseButton">Add to cart</button>
+      </div>
+      <div class="forButton">
+        <div class="topping patty" data-ingredient="patty" data-price="1.25">
+          Patty
+          <img class="toppingImage"
+            src="https://previews.123rf.com/images/magone/magone1711/magone171100085/89285125-grilled-burger-meat-isolated-on-white-background.jpg" />
+          <div class="subtitle"> $1.25 </div>
+
+        </div>
+        <button id="pattyButton">Add to cart</button>
+      </div>
+
+    </div>
+    <div id="checkout">
+      <div class="button">Check out</div>
+    </div>
+    <!--     add to cart button -->
+    <div id="addToCart">
+      <button onclick="orderDiv.location.reload()"> Add to cart </button>
+    </div>
+    <!-- add new div to put total price -->
+    <div id="total"></div>
+<!--     spicy challenge -->
+    <!-- add new div to put cart total price -->
+    <div id="cartTotal">
+      <!--       <a onclick="updateDiv ();">reload div</a> -->
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!--Has basic naviagtion bar, plans for subsrciption in cards, gallery of zodiac signs and birth stones, pinterest board, airbnb search page and newspaper homepage-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Fun</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formatting.css" />
+  </head>
+
+  <body>
+    <!-- Spread menu -->
+    <section>
+      <h1>Basic Nav</h1> <!-- This is the container for the items below -->
+      <div class="nav"> 
+        <!-- adding an a tag so Home links to google.com when clicked -->
+        <div><a href="https://www.google.com/"> Home</a></div>
+        <div>Store</div>
+        <div>About Us</div>
+        <div>Contact</div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Clustered Nav</h1>
+      <div class="clusterNav">
+        <div>Company<br />Name</div> <!--items of clusterNav are company name and button cluster, the changes to cluster nav will only change on these 2-->
+        <div class="buttonCluster"> <!--items of buttoncluster are store, about us, contact-->
+          <div>Store</div>
+          <div>About Us</div>
+          <div>Contact</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Plan for subsrciption</h1>
+      <div class="card">
+        <h3>Plan Options</h3>
+        <p>
+          Take a look at the different plan options below for more zodiac sign and birth stone information. This includes the Free, Premium and Diamond Plan!
+        </p>
+        <button>Learn More</button>
+      </div>
+    </section>
+
+    <section>
+      <h1>Plan Details</h1>
+      <div class="cardRow"> <!--ultimate parent/container-->
+        <div class="clusterCard"> <!-- next container-->
+          <div class="contentCluster">  <!-- last container-->
+            <!-- Changing card descriptions to plan options-->
+            <h3>Free Plan</h3>
+            <p>Access to in-depth description of your zodiac sign and birthstone </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="clusterCard">
+          <div class="contentCluster">
+            <h3>Premium Plan</h3>
+            <p>
+              Access to in-depth description of your zodiac sign and birthstone without ads!
+            </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="clusterCard">
+          <div class="contentCluster">
+            <h3>Diamond Plan</h3>
+            <p>
+              Access to in-depth description of your zodiac sign and birthstone without ads! Plus recieve a bonus of daily, in-depth, horoscope. 
+            </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Zodiac Sign Gallery</h1>
+      <div class="gallery"> <!--container called gallery-->
+        <!--replacing items with zodiac signs-->
+        <div><h3>Aquarius</h3></div>
+        <div><h3>Pisces</h3></div>
+        <div><h3>Aries</h3></div>
+        <div><h3>Taurus</h3></div>
+        <div><h3>Gemini</h3></div>
+        <div><h3>Cancer</h3></div>
+        <div><h3>Leo</h3></div>
+        <div><h3>Virgo</h3></div>
+        <div><h3>Libra</h3></div>
+        <div><h3>Scorpio</h3></div>
+        <div><h3>Sagittarius</h3></div>
+        <div><h3>Capricorn</h3></div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Birthstone Complex Gallery</h1>
+      <div class="complexGallery">
+        <!--replacing items with birth stones-->
+        <div><h3>Garnet</h3></div>
+        <div><h3>Amethyst</h3></div>
+        <div class="wide"><h3>Aquamarine</h3></div>
+        <div><h3>Diamond</h3></div>
+        <div class="tall"><h3>Emerald</h3></div>
+        <div><h3>Alexandrite</h3></div>
+        <div class="huge"><h3>Ruby</h3></div>
+        <div><h3>Peridot</h3></div>
+        <div><h3>Sapphire</h3></div>
+        <div><h3>Tourmaline</h3></div>
+        <div><h3>Topaz</h3></div>
+        <div><h3>Blue Topaz</h3></div>
+      </div>
+    </section>
+
+    <section>
+      <!--Creating a pinterest board with 4 columns and each column has 2 images-->
+      <h1> Pinterest Board </h1>
+      <div class= "pinterest">
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"/>
+          <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"/>
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"/>
+          <img src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q="/>
+        </div>
+        <div class="column">
+          <img src="https://media.istockphoto.com/photos/maroon-bells-autumn-aspen-treeslake-reflectionsaspen-colorado-picture-id478656454?k=20&m=478656454&s=612x612&w=0&h=82vTv92P5yN0ROHFDvp3ppL2S4GsDzhrVc5ik6dbe90="/>
+          <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg"/>
+        </div>
+        <div class="column">
+          <img src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg"/>
+          <img src="https://images.unsplash.com/photo-1522728000856-8721ca26ccd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWxvbmV8ZW58MHx8MHx8&w=1000&q=80"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Airbnb Searh Page -->
+    <section>
+    <h1>AirBnB</h1> <!-- This is the container for the items below -->
+      <div class="nav">
+        <div id="upperRow"></div>
+          <div>Stays</div>
+          <div>Experiences</div>
+          <div>Online Experiences</div>
+        </div>
+        <div id="lowerRow">
+          <div>
+            <!--the image will appear when you hover where-->
+            <div class = "hover_img">
+              <a href="#">Where (hover over) <span><img src="images/airbnbMap.jpg" style="width:500px;height:500px;"/></span></a>
+            </div>
+          </div>
+          <div>Check In</div>
+          <div>Check Out</div>
+          <div>Who</div>
+        </div>
+      </div>
+    </section>
+
+    <!--Washington Post Newpaper homepage-->
+    <section>
+      <h1>Washington Post Homepage</h1>
+      <!--For washington post homepage make the navigation bar black and put it in a long rectangle and make the text the color white-->
+        <div class = "nav">
+          <div id=black class="longRectangle">
+          <div class=newspaperNav>
+            <div class=newspaperMain>
+              <p style="color:white">Search   </p>
+              <p style="color:white">Sections   </p>
+              <p style="color:white">Notifications   </p>
+            </div>
+            <div class=newspaperName>
+              <p style="color:white">The Washington Post</p>
+            </div>
+            <div class=newspaperSignIn>
+              <p style="color:white">Sign In</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>

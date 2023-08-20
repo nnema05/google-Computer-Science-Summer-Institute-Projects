@@ -1,0 +1,130 @@
+
+/*Flexbox cheat sheet: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/*For nav bar we want to center it and make the items horizontal */
+.nav {
+  display: flex; /*turning on the flex system which defaults to making all of the chidlren horizontally laidout instead of vertical*/
+  /*to center*/
+  justify-content: center;
+}
+
+.clusterNav {
+  display: flex; /*turning on the flex system*/
+  justify-content: space-between; /*space between items of cluster nav which were company name and button cluster (which has its own items store, about us, contact) that didn't get spaced out because they are part of the entire button cluster item*/
+}
+
+.buttonCluster {
+  display: flex; /*turning on the flex system*/
+}
+
+.card {
+  display: flex; /*turning on the flex system but default is in row (horizontal) and we want it to be in column (vertical), use flex direction to do this */
+  flex-direction: column;
+  /*space the items in the card*/
+  justify-content: space-between;
+}
+
+/*want the cards to be in a row, cardRow contains all of the cluster cards*/
+.cardRow {
+  display: flex; /*turning on the flex system*/
+  /*center it and add a gap*/
+  justify-content: center;
+  gap: 20px;
+}
+
+/*want the words to be at the top and buttton to be at the bottom*/
+/*the items of the cluster card are the words all called cluster content and then the button*/
+.clusterCard {
+  display: flex; /*turning on the flex system*/
+  flex-direction: column; /*want items to be vertical*/
+  /*Look at html to see how space between would be betweeen the entire text and the button*/
+  justify-content: space-between;
+}
+
+
+/*Grid*/
+
+.gallery {
+  display: grid; /*turning on the grid system*/
+  /*add property called grid template columns*/ 
+  /*fr stands for fractions and the numbers define the width size of the columns*/
+  /*want to create 3 columns, with the middle one with a bigger size*/ 
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.complexGallery {
+  display: grid; /*turning on the grid system, goes on container items only!*/
+  /*use repeat to create 5 columns with 1fr size*/
+  grid-template-columns: repeat(5, 1fr);
+  /*now we want indivual items to look different so we do it on specific items, like we want item 3 to be whole width and item 5 to be double height*/
+
+  /*want to re arrange the order of the items and help it flow so the items are as densley packed as possible*/
+  grid-auto-flow: dense;
+}
+
+.wide {
+  /*want item 3 to be width of whole screen*/
+  /*use grid column with property span so item 3 spans all 5 of the columns*/
+  grid-column: span 5;
+}
+
+.tall {
+  /*want item 5 to be double height*/
+  grid-row: span 2;
+}
+
+.huge {
+  /*want item 7 to span 3 wide and span 3 height */
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+
+.pinterest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*adjusted size of all images*/
+img {
+  width:100px;
+  height:100px;
+}
+
+/*Created 4 columns with https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp*/
+.column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+/*change format of lower row in air bnb search*/ 
+#lowerRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*allow the image to appear when you hover*/
+.hover_img a {
+  position:relative;
+}
+
+.hover_img a span { 
+  position:absolute; display:none; z-index:99; 
+}
+
+.hover_img a:hover span {
+  display:block; 
+}
+
+/*fix newspaper naviagtion bar*/ 
+/*start with child of nav, newspaper nav to make space bewteen sections*/
+.newspaperNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*grandchild of nav, newspaperMain also needs to be set up horizontally*/
+.newspaperMain {
+  display:flex;
+  justify-content: space-around;
+}

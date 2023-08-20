@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Center and resize image */
+.image {
+  height: 20%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
