@@ -1,0 +1,59 @@
+
+<!--Building my restaurant website-->
+<!--<> is opening for a tag and </> is closing for a tag-->
+
+<!DOCTYPE html> <!--Open as html structure-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pete's Pizza</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <!--Open a body tag-->
+  <body>
+    <section id="Greeting"> <!--Open a section tag, the id will help sort what kind of section it is, section is a child of the body tag-->
+      <h1>Pizza Parlor</h1> <!--h something tags have 6 of them to describe different headings, h1 is the largest and is the title heading-->
+      <!--h3 is a little smaller heading, here we are putting our description of our heading-->
+      <h3>Good Pizza, Good Day</h3>
+    </section> <!--always close section and other tags!-->
+
+    <!--New section for about section-->
+    <section id="about">
+      <h2>About</h2>
+      <p>The cheesiest pizzas in town!</p>
+      <h3>Rules</h3>
+      <ul> <!--Creates an unordered list-->
+        <li>Wear shoes</li>
+        <li>Have fun</li>
+        <li>And always add extra cheese</li>
+      </ul>
+      <h4>About the owner</h4>
+      <p>The owner is Nandini Nema, a high school graduate.</p>
+      <!--To add a downloaded image, create an image folder in files, upload image from computer into folder and src the path in img tag, style attribute can change the size of the picture-->
+      <img src="images/SeniorYearbookPicture.jpg" style="width:50%;height:75%px">
+    </section>
+
+    <!--New section for menu-->
+    <section id="menu">
+      <!--Make seperate menu page (menu.html) and link it within the paragraph and a tag -->
+     <p><a href="menu.html"> Menu</a>
+     </p>
+    </section>
+
+    <!--New section for contact information-->
+    <section id = contact>
+      <!--Make seperate contact page (contact.html) and link it within the paragraph and a tag -->
+      <p><a href="contact.html"> Contact Us</a> 
+    </section>
+
+    <!--New footer (seperate from the sections-->
+    <footer>
+      <p>Interested in learning more? Read this <a href="https://salernospizza.com/pizza-facts/who-invented-pizza/#:~:text=In%201889%2C%20King%20Umberto%20I,as%20the%20first%20pizza%20delivery!">information about pizzas!</a>
+        <!--For certain text to have a link, use open an a tag, use href = attribute for the url, and put the text that you want to link after the url beofre the closing a tag -->
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!--for Css file go to style.css to change color and font sizes-->
